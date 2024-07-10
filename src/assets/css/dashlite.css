@@ -26929,7 +26929,8 @@ body.nav-shown {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
+  height: fit-content !important;
 }
 .header.has-header-main-s1 {
   padding-top: 72px;
@@ -29683,3 +29684,5 @@ body.toggle-shown {
 }
 
 /*! END @iO */
+
+
