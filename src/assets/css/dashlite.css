@@ -29683,6 +29683,30 @@ body.toggle-shown {
   border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+.slick-prev {
+left: 60px !important;
+}
+.slick-next {
+right: 60px !important;
+top: 52% !important;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+  right:0px;
+}
+
+.slick-dots li button {
+  width: 30px !important;
+  height : 3px !important;
+  background-color: rgba(255,255,255,.5);
+}
+
+.slick-dots li.slick-active button  {
+  background-color: #fff !important;
+}
 /*! END @iO */
 
 
