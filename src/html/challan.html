@@ -15,7 +15,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png" />
     <!-- Page Title  -->
-    <title>Verification | PTEC</title>
+    <title>Challan | PTEC</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="./assets/css/dashlite.css?ver=3.2.3" />
     <link
@@ -183,7 +183,11 @@
                       >
                     </li>
                     <li class="menu-item">
-                      <a href="/src/html/challan.html" class="menu-link nav-link">Challan</a>
+                      <a
+                        href="/src/html/challan.html"
+                        class="menu-link nav-link"
+                        >Challan</a
+                      >
                     </li>
                     <li class="menu-item">
                       <a href="#faqs" class="menu-link nav-link">Downloads</a>
@@ -223,7 +227,7 @@
             <div
               class="d-flex flex-column w-100 h-100 justify-content-center align-items-center text-white position-absolute"
             >
-              <h1 class="fw-bold fs-1">Verification</h1>
+              <h1 class="fw-bold fs-1">Generate Bank Deposit Slip</h1>
               <div class="d-flex flex-row text-center">
                 <span
                   class="d-flex flex-row align-items-center fs-6 fw-normal mx-3"
@@ -245,7 +249,7 @@
                   class="d-flex flex-row align-content-center fw-normal"
                   style="gap: 10px"
                 >
-                  <p class="m-0">VERIFICATION</p>
+                  <p class="m-0">CHALLAN</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512"
@@ -264,106 +268,158 @@
 
         <!-- trades section end -->
 
-        <!-- tabs section start  -->
-        <ul class="nav nav-tabs d-flex justify-content-center mt-3">
-          <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#tabItem9"
-              >Online Verification</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tabItem10"
-              >Departmental Verification</a
-            >
-          </li>
-        </ul>
-        <div class="tab-content">
-          <!-- tab-1 start -->
-          <div class="tab-pane active" id="tabItem9">
-            <div class="mt-4 mb-4 mx-auto" style="max-width: 640px;">
-                <div
-                  class="d-flex flex-column justify-content-center align-items-center mb-3"
+        <!-- challan form start  -->
+        <div class="py-5 d-flex flex-column px-md-5 mx-md-3">
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="d-flex flex-column">
+              <label class="mb-3"
+                >Name of Candidate / Institute
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control border-2 border-light h-50 p-3"
+                style="height: 50px"
+              />
+            </div>
+
+            <div class="d-flex flex-column">
+              <label class="mb-3"
+                >Roll No.
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control border-2 border-light h-50 p-3"
+                style="height: 50px"
+              />
+            </div>
+
+            <div class="d-flex flex-column">
+              <label class="mb-3"
+                >Registration No.
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control border-2 border-light h-50 p-3"
+                style="height: 50px"
+              />
+            </div>
+
+            <div class="d-flex flex-column">
+              <label class="mb-3"
+                >Contact
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control border-2 border-light h-50 p-3"
+                style="height: 50px"
+              />
+            </div>
+
+            <div class="d-flex flex-column">
+              <label class="mb-3"
+                >Discipline
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control border-2 border-light h-50 p-3"
+                style="height: 50px"
+              />
+            </div>
+
+            <div class="d-flex flex-column">
+              <label for="" class="mb-3"
+                >On Account Of.
+                <span class="text-danger">*</span>
+                <span class="text-warning">(view fee structure)</span>
+              </label>
+              <select
+                name="Account"
+                id=""
+                class="form-select h-auto border"
+                style="height: 50px"
+              >
+                <option value="11">Registration Fee</option>
+                <option value="12">Examination Fee</option>
+                <option value="13">
+                  Duplicate Diploma / Certificate / DMC
+                </option>
+                <option value="14">Affiliation Fee</option>
+                <option value="15">DMC Fee</option>
+                <option value="16">Verification Fee</option>
+                <option value="17">Change Correction</option>
+                <option value="18">Gazette Fee</option>
+                <option value="19">Hall Creation Fee</option>
+              </select>
+            </div>
+
+            <div class="d-flex flex-column">
+              <div class="d-flex flex-column">
+                <label class="mb-3"
+                  >Address
+                  <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control border-2 border-light h-50 p-3"
+                  style="height: 50px"
+                />
+              </div>
+              <div class="mt-3">
+                <button
+                  class="btn btn-success rounded-pill d-flex justify-content-center"
+                  style="width: 150px; height: 40px"
                 >
-                  <div class="d-flex flex-column mb-3 position-relative mx-3">
-                    <label for="" class="text-secondary font-weight-bold mb-3"
-                      >Verification Code / Roll No:</label
-                    >
-                    <div class="w-100" style="height: 60px; position: relative">
-                      <input
-                        type="text"
-                        placeholder="Enter Your Verification Code"
-                        class="form-control mb-3"
-                        style="
-                          width: 300px;
-                          width: 900px;
-                          width: 600px;
-                          height: 100%;
-                        "
-                      />
-                      <button
-                        class="btn btn-success position-absolute"
-                        style="top: 25%; right: 0; width: 80px; height: 30px"
-                      >
-                        Verify
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex flex-column mx-3">
-                  <div>
-                    <p class="w-100 text-muted" style="font-size: 16px">
-                      <span
-                        class="text-dark font-weight-bold"
-                        style="font-size: 20px"
-                        >DISCLAIMER:</span
-                      >
-                      This result is issued provisionally, errors and omission
-                      excepted, as a notice only. Any entry appearing on the
-                      website does not itself confer any right or privilege on a
-                      candidate for the grant of certificate which will be
-                      issued under the rules/regulations on the basis of the
-                      original record of the Board.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h1
-                      class="text-secondary font-weight-semibold"
-                      style="font-size: 20px"
-                    >
-                      Words Need to Know:
-                    </h1>
-                    <p class="text-muted">
-                      <span class="text-secondary">• RL: </span>Result Late
-                    </p>
-                    <p class="text-muted">
-                      <span class="text-secondary">• RLF: </span>Result Late Fee
-                    </p>
-                    <p class="text-muted">
-                      <span class="text-secondary">• MNI: </span>Marks Not
-                      Improved
-                    </p>
-                    <p class="text-muted">
-                      <span class="text-secondary">• RL CC: </span>Result Late
-                      Due to Course Completion Certificate
-                    </p>
-                    <p class="text-muted">
-                      <span class="text-secondary">• UMC: </span>Unfair Means
-                      Case
-                    </p>
-                  </div>
-                </div>
+                  Print Challan
+                </button>
+              </div>
+            </div>
           </div>
-          </div>
-          <!-- tab-1 end -->
-          <div class="tab-pane" id="tabItem10">
-            <div class="container">
-                <img src="https://ptec.com.pk/images/departmental-verification-process.jpg" alt="" class="mt-5">
+          <hr
+            class=" w-100 mx-auto d-flex justify-content-center align-items-center"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center w-100"
+          >
+            <div
+              class="position-relative text-center w-100"
+            >
+              <table
+                class="table table-sm text-left text-sm rtl:text-right w-100"
+              >
+                <thead
+                  class="" style="background-color: #2C6A59 !important;"
+                >
+                  <div
+                  style="background-color: #2C6A59 !important;"
+                    class="bg-[#2C6A59] text-white px-6 py-3 w-full flex justify-center items-center text-center font-bold"
+                  >
+                    FEE STRUCTURE
+                  </div>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="px-3 py-2 border">Code No</th>
+                    <th class="px-3 py-2 border w-50">Details</th>
+                    <th class="px-3 py-2 border">Fee (Rs.)</th>
+                  </tr>
+                  <tr class="text-secondary font-weight-bold border">
+                    <td class="px-3 py-2 border">11</td>
+                    <td class="px-3 py-2 border">Registration Fee</td>
+                    <td class="px-3 py-2 border">1,580</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-        <!-- tabs section end  -->
+
+
+        <!-- challan form end  -->
 
         <!-- question and answer section start -->
         <section
