@@ -13,22 +13,27 @@
       content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers."
     />
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="shortcut icon" href="../images/favicon.png" />
     <!-- Page Title  -->
-    <title>Challan | PTEC</title>
+    <title>Why ptec | PTEC</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="./assets/css/dashlite.css?ver=3.2.3" />
+    <link rel="stylesheet" href="../assets/css/dashlite.css?ver=3.2.3" />
     <link
       id="skin-default"
       rel="stylesheet"
-      href="./assets/css/theme.css?ver=3.2.3"
+      href="../assets/css/theme.css?ver=3.2.3"
     />
   </head>
   <body class="nk-body bg-white npc-landing">
     <div class="nk-app-root">
       <!-- main @s -->
       <div class="d-flex justify-content-center py-4">
-        <img class="" style="width: 200px" src="./images/logo.svg" alt="logo" />
+        <img
+          class=""
+          style="width: 200px"
+          src="../images/logo.svg"
+          alt="logo"
+        />
       </div>
       <div class="nk-main">
         <header class="has-header-main-s1" id="home">
@@ -189,11 +194,15 @@
                         >Challan</a
                       >
                     </li>
-                    <li class="menu-item">
-                      <a href="/src/html/downloads.html" class="menu-link nav-link">Downloads</a>
+                    <li href="/src/html/downloads.html">
+                      <a href="#faqs" class="menu-link nav-link">Downloads</a>
                     </li>
                     <li class="menu-item">
-                      <a href="/src/html/contact-us.html" class="menu-link nav-link">Contact</a>
+                      <a
+                        href="/src/html/contact-us.html"
+                        class="menu-link nav-link"
+                        >Contact</a
+                      >
                     </li>
                   </ul>
                 </nav>
@@ -227,7 +236,7 @@
             <div
               class="d-flex flex-column w-100 h-100 justify-content-center align-items-center text-white position-absolute"
             >
-              <h1 class="fw-bold fs-1">Generate Bank Deposit Slip</h1>
+              <h1 class="fw-bold fs-1">Why PTEC</h1>
               <div class="d-flex flex-row text-center">
                 <span
                   class="d-flex flex-row align-items-center fs-6 fw-normal mx-3"
@@ -249,7 +258,7 @@
                   class="d-flex flex-row align-content-center fw-normal"
                   style="gap: 10px"
                 >
-                  <p class="m-0">CHALLAN</p>
+                  <p class="m-0">WHY PTEC</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512"
@@ -268,158 +277,30 @@
 
         <!-- trades section end -->
 
-        <!-- challan form start  -->
-        <div class="py-5 d-flex flex-column px-md-5 mx-md-3">
-          <div class="row row-cols-1 row-cols-md-2 g-3">
-            <div class="d-flex flex-column">
-              <label class="mb-3"
-                >Name of Candidate / Institute
-                <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control border-2 border-light h-50 p-3"
-                style="height: 50px"
-              />
-            </div>
-
-            <div class="d-flex flex-column">
-              <label class="mb-3"
-                >Roll No.
-                <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control border-2 border-light h-50 p-3"
-                style="height: 50px"
-              />
-            </div>
-
-            <div class="d-flex flex-column">
-              <label class="mb-3"
-                >Registration No.
-                <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control border-2 border-light h-50 p-3"
-                style="height: 50px"
-              />
-            </div>
-
-            <div class="d-flex flex-column">
-              <label class="mb-3"
-                >Contact
-                <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control border-2 border-light h-50 p-3"
-                style="height: 50px"
-              />
-            </div>
-
-            <div class="d-flex flex-column">
-              <label class="mb-3"
-                >Discipline
-                <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control border-2 border-light h-50 p-3"
-                style="height: 50px"
-              />
-            </div>
-
-            <div class="d-flex flex-column">
-              <label for="" class="mb-3"
-                >On Account Of.
-                <span class="text-danger">*</span>
-                <span class="text-warning">(view fee structure)</span>
-              </label>
-              <select
-                name="Account"
-                id=""
-                class="form-select h-auto border"
-                style="height: 50px"
-              >
-                <option value="11">Registration Fee</option>
-                <option value="12">Examination Fee</option>
-                <option value="13">
-                  Duplicate Diploma / Certificate / DMC
-                </option>
-                <option value="14">Affiliation Fee</option>
-                <option value="15">DMC Fee</option>
-                <option value="16">Verification Fee</option>
-                <option value="17">Change Correction</option>
-                <option value="18">Gazette Fee</option>
-                <option value="19">Hall Creation Fee</option>
-              </select>
-            </div>
-
-            <div class="d-flex flex-column">
-              <div class="d-flex flex-column">
-                <label class="mb-3"
-                  >Address
-                  <span class="text-danger">*</span>
-                </label>
-                <input
-                  type="text"
-                  class="form-control border-2 border-light h-50 p-3"
-                  style="height: 50px"
-                />
-              </div>
-              <div class="mt-3">
-                <button
-                  class="btn btn-success rounded-pill d-flex justify-content-center"
-                  style="width: 150px; height: 40px"
-                >
-                  Print Challan
-                </button>
-              </div>
-            </div>
-          </div>
-          <hr
-            class="w-100 mx-auto d-flex justify-content-center align-items-center"
-          />
-          <div
-            class="d-flex flex-column justify-content-center align-items-center w-100"
-          >
-            <div
-              class="position-relative text-center w-100"
-            >
-              <table
-                class="table table-sm text-left text-sm rtl:text-right w-100"
-              >
-                <thead
-                  class="" style="background-color: #2C6A59 !important;"
-                >
-                  <div
-                  style="background-color: #2C6A59 !important;"
-                    class="bg-[#2C6A59] text-white px-6 py-3 w-full flex justify-center items-center text-center font-bold"
-                  >
-                    FEE STRUCTURE
-                  </div>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="px-3 py-2 border">Code No</th>
-                    <th class="px-3 py-2 border w-50">Details</th>
-                    <th class="px-3 py-2 border">Fee (Rs.)</th>
-                  </tr>
-                  <tr class="text-secondary font-weight-bold border">
-                    <td class="px-3 py-2 border">11</td>
-                    <td class="px-3 py-2 border">Registration Fee</td>
-                    <td class="px-3 py-2 border">1,580</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+        <div class="p-5">
+          <h2>Why PTEC?</h2>
+          <p>
+            PTEC Islamabad is a Professional organization established,
+            constituted by the Government of the Punjab, Manpower and Overseas
+            Pakistanis. In addition to its accreditation with various top ranked
+            organizations, colleges to excel distance learning on fast track,
+            online, competency based and regular education for life experienced,
+            matured and on-job professionals.
+          </p>
+          <p>
+            PTEC operates on Public-Private Partnership. Active Participation of
+            Employers Federation of Pakistan [EFP] and Private Sector
+            Businessmen have created the success story of the PTEC Islamabad. It
+            is affiliated with Foreign Office & colleges and is engaged in
+            Distance Learning Education. Trade Testing Council is engaged to
+            identify, develop and arrange Vocational, Technical / Professional
+            and IT Training Programs. Training Programs are flexible, demand
+            driven and cost effective with maximum participation from the
+            Employers. PTEC also offers tailor-made courses, according to the
+            customer’s .needs. It conducts Training Needs Assessment Surveys and
+            schedules its training programs accordingly.
+          </p>
         </div>
-
-
-        <!-- challan form end  -->
 
         <!-- question and answer section start -->
         <section
@@ -495,7 +376,6 @@
             </div>
           </div>
         </section>
-
         <!-- question and answer section end -->
 
         <footer>
@@ -779,7 +659,7 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
-    <script src="./assets/js/bundle.js?ver=3.2.3"></script>
-    <script src="./assets/js/scripts.js?ver=3.2.3"></script>
+    <script src="../assets/js/bundle.js?ver=3.2.3"></script>
+    <script src="../assets/js/scripts.js?ver=3.2.3"></script>
   </body>
 </html>
