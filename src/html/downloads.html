@@ -23,12 +23,77 @@
       rel="stylesheet"
       href="./assets/css/theme.css?ver=3.2.3"
     />
+    <style>
+      .card-hover {
+        background-color: white;
+      }
+      .card-hover:hover h3 {
+        color: #fff;
+      }
+      .card-hover:hover {
+        background-color: #056a58;
+      }
+
+      .nav-item {
+        font-weight: 400 !important;
+        color: white !important;
+      }
+      .nav-item:hover {
+        font-weight: 900 !important;
+        color: white !important;
+      }
+
+      .sub-menu-color {
+        color: #ffffff;
+      }
+
+      .change-toggle-position {
+        transform: translateX(50px);
+      }
+      .display-question__section {
+        position: relative;
+      }
+
+      /* Color for large screens and above */
+      @media (min-width: 992px) {
+        .sub-menu-color {
+          color: #212529 !important;
+        }
+        .display-question__section {
+          position: absolute;
+          right: 180px;
+          top: 10px;
+        }
+      }
+    </style>
   </head>
   <body class="nk-body bg-white npc-landing">
     <div class="nk-app-root">
       <!-- main @s -->
-      <div class="d-flex justify-content-center py-4">
+      <div
+        class="d-flex flex-column flex-lg-row justify-content-between align-items-center py-1"
+        style="background-color: #d5eaf5"
+      >
         <img class="" style="width: 200px" src="./images/logo.svg" alt="logo" />
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+          <img class="" style="width: 200px" src="./images/besmellah-2.png" alt="logo" />
+          <p
+            style="
+              color: #a47c00;
+              font-family: 'Engravers', 'Arial', sans-serif;
+              font-size: 1.8rem;
+            "
+          >
+            Islamabad Board of Certified and Skilled Professionals
+          </p>
+          <p style="color: black;font-weight: bold;">Established Under Act XXI of 1860 <br> Govt of Punjab - Pakistan</p>
+        </div>
+        <img
+          class=""
+          style="width: 200px"
+          src="./images/Islamabad Board of Certified & Skilled Professionals_2.png"
+          alt="logo"
+        />
       </div>
       <div class="nk-main">
         <header class="has-header-main-s1" id="home">
@@ -54,16 +119,12 @@
                     <li class="menu-item">
                       <a
                         href="/src/html/index.html"
-                        class="menu-link nav-link"
-                        style="font-weight: 400 !important"
+                        class="menu-link nav-link nav-item"
                         >Home</a
                       >
                     </li>
                     <li class="menu-item has-sub">
-                      <a
-                        href="#"
-                        class="menu-link menu-toggle"
-                        style="font-weight: 400 !important"
+                      <a href="#" class="menu-link menu-toggle nav-item"
                         >About Us</a
                       >
                       <div class="menu-sub">
@@ -71,33 +132,21 @@
                           <li class="menu-item">
                             <a
                               href="/src/html/aboutus/introduction.html"
-                              class="menu-link"
-                              style="
-                                color: #212529 !important;
-                                font-weight: 400 !important;
-                              "
+                              class="menu-link sub-menu-color"
                               >Introduction</a
                             >
                           </li>
                           <li class="menu-item">
                             <a
                               href="/src/html/aboutus/why-ptec.html"
-                              class="menu-link"
-                              style="
-                                color: #212529 !important;
-                                font-weight: 400 !important;
-                              "
+                              class="menu-link sub-menu-color"
                               >Why PTEC</a
                             >
                           </li>
                           <li class="menu-item">
                             <a
                               href="/src/html/aboutus/regulations.html"
-                              class="menu-link"
-                              style="
-                                color: #212529 !important;
-                                font-weight: 400 !important;
-                              "
+                              class="menu-link sub-menu-color"
                               >Regulations</a
                             >
                           </li>
@@ -107,16 +156,12 @@
                     <li class="menu-item">
                       <a
                         href="/src/html/trades.html"
-                        class="menu-link nav-link"
-                        style="font-weight: 400 !important"
+                        class="menu-link nav-link nav-item"
                         >Trades</a
                       >
                     </li>
                     <li class="menu-item has-sub">
-                      <a
-                        href="#"
-                        class="menu-link menu-toggle"
-                        style="font-weight: 400 !important"
+                      <a href="#" class="menu-link menu-toggle nav-item"
                         >E-Services</a
                       >
                       <div class="menu-sub">
@@ -124,44 +169,28 @@
                           <li class="menu-item">
                             <a
                               href="html/index.html"
-                              class="menu-link"
-                              style="
-                                color: #212529 !important;
-                                font-weight: 400 !important;
-                              "
+                              class="menu-link sub-menu-color"
                               >Info E-Services</a
                             >
                           </li>
                           <li class="menu-item">
                             <a
                               href="html/index-v2.html"
-                              class="menu-link"
-                              style="
-                                color: #212529 !important;
-                                font-weight: 400 !important;
-                              "
+                              class="menu-link sub-menu-color"
                               >Students Material</a
                             >
                           </li>
                           <li class="menu-item">
                             <a
                               href="html/index-v3.html"
-                              class="menu-link"
-                              style="
-                                color: #212529 !important;
-                                font-weight: 400 !important;
-                              "
+                              class="menu-link sub-menu-color"
                               >Teacher Material</a
                             >
                           </li>
                           <li class="menu-item">
                             <a
                               href="html/index-v3.html"
-                              class="menu-link"
-                              style="
-                                color: #212529 !important;
-                                font-weight: 400 !important;
-                              "
+                              class="menu-link sub-menu-color"
                               >Syllabus & Model Papers</a
                             >
                           </li>
@@ -171,31 +200,48 @@
                     <li class="menu-item">
                       <a
                         href="/src/html/apply-online.html"
-                        class="menu-link nav-link"
+                        class="menu-link nav-link nav-item"
                         >Apply Online</a
                       >
                     </li>
                     <li class="menu-item">
                       <a
                         href="/src/html/verification.html"
-                        class="menu-link nav-link"
+                        class="menu-link nav-link nav-item"
                         >Verification</a
                       >
                     </li>
                     <li class="menu-item">
                       <a
                         href="/src/html/challan.html"
-                        class="menu-link nav-link"
+                        class="menu-link nav-link nav-item"
                         >Challan</a
                       >
                     </li>
-                    <li href="/src/html/downloads.html">
-                      <a href="#faqs" class="menu-link nav-link">Downloads</a>
+                    <li class="menu-item">
+                      <a
+                        href="/src/html/downloads.html"
+                        class="menu-link nav-link nav-item"
+                        >Downloads</a
+                      >
                     </li>
                     <li class="menu-item">
-                      <a href="/src/html/contact-us.html" class="menu-link nav-link">Contact</a>
+                      <a
+                        href="/src/html/contact-us.html"
+                        class="menu-link nav-link nav-item"
+                        >Contact</a
+                      >
                     </li>
                   </ul>
+                  <div class="header-toggle change-toggle-position">
+                    <button class="menu-toggler" data-target="mainNav">
+                      <em
+                        class="menu-on icon ni ni-menu"
+                        style="color: #fff"
+                      ></em>
+                      <em class="menu-off icon ni ni-cross"></em>
+                    </button>
+                  </div>
                 </nav>
                 <!-- .nk-nav-menu -->
               </div>
@@ -308,7 +354,7 @@
         <!-- challan form end  -->
 
         <!-- question and answer section start -->
-        <section
+         <section
           class="position-relative w-100"
           style="
             height: 600px !important;
@@ -320,18 +366,21 @@
             class="position-absolute top-0 start-0 end-0 bottom-0"
             style="
               background: linear-gradient(45deg, #056a58 0%, #0d1128 100%);
-              opacity: 0.5;
+              opacity: 0.7;
             "
           ></div>
-          <div class="d-flex justify-content-center">
+          <div class="display-question__section">
             <div
               class="text-white position-relative px-5 px-lg-0 ms-lg-5 ps-lg-5 d-flex flex-column align-items-center gap-lg-5 w-100 h-100 ml-5"
-              style="max-width: 600px; padding-top: 80px"
+              style="max-width: 700px; padding-top: 80px"
             >
-              <h1 class="fs-1 fw-semibold w-100 w-md-auto">
+              <h1
+                class="fs-1 fw-semibold w-md-auto w-100"
+                style="letter-spacing: 2px"
+              >
                 Question About Course Trade
               </h1>
-              <h2 class="fs-6 fw-normal">
+              <h2 class="fs-4 fw-normal w-100" style="text-align: start">
                 Fill in the form and we will answer your question.
               </h2>
               <div class="row row-cols-1 row-cols-md-2 g-3">
@@ -339,32 +388,53 @@
                   <input
                     type="text"
                     placeholder="Your Name"
-                    class="form-control bg-transparent border-0 border-bottom border-2 border-secondary text-white"
-                    style="padding-bottom: 1.5rem; outline: none"
+                    class="form-control bg-transparent border-0 text-white"
+                    style="
+                      padding-bottom: 1.5rem;
+                      outline: none !important;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+                      border-radius: 0px;
+                      transition: none !important;
+                    "
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your Phone"
                     class="form-control bg-transparent border-0 border-bottom border-2 border-secondary text-white"
-                    style="padding-bottom: 1.5rem; outline: none"
+                    style="
+                      padding-bottom: 1.5rem;
+                      outline: none;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+                      border-radius: 0px;
+                    "
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Course Name"
                     class="form-control bg-transparent border-0 border-bottom border-2 border-secondary text-white"
-                    style="padding-bottom: 1.5rem; outline: none"
+                    style="
+                      padding-bottom: 1.5rem;
+                      outline: none;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+                      border-radius: 0px;
+                    "
                   />
                 </div>
                 <div class="col">
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Message"
                     class="form-control bg-transparent border-0 border-bottom border-2 border-secondary text-white"
-                    style="padding-bottom: 1.5rem; outline: none"
+                    style="
+                      padding-bottom: 1.5rem;
+                      outline: none;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+                      border-radius: 0px;
+                    "
                   />
                 </div>
               </div>
@@ -640,7 +710,7 @@
               <div class="d-flex flex-column mb-4">
                 <h1 class="h4 font-weight-medium mb-3">Subscribe Us!</h1>
                 <input
-                  class="p-2 w-90 text-white text-center rounded-1 mb-2"
+                  class="p-2 w-90 text-white text-center rounded-1 mb-2" style="border: 0px; background: rgba(255,255,255,0.1);color: rgba(255, 255, 255, 0.7);outline: none; background-color: #393939 !important"
                   style="background-color: #393939 !important"
                   type="text"
                   placeholder="Enter Email Address"
